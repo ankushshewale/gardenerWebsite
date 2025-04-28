@@ -2,6 +2,7 @@ import { Jost, Open_Sans } from "next/font/google";
 import "./globals.scss";
 import Navbar from "@/components/Navbar";
 import BaseFooter from "@/components/BaseFooter";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const jost = Jost({
   subsets: ["latin"],
