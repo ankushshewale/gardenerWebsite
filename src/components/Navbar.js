@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -64,50 +65,18 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="index.html" className="nav-item nav-link active">
+            <Link href="/" className="nav-item nav-link active">
               Home
-            </a>
-            <a href="about.html" className="nav-item nav-link">
+            </Link>
+            <Link href="/about" className="nav-item nav-link">
               About
-            </a>
-            <a href="service.html" className="nav-item nav-link">
+            </Link>
+            <Link href="/services" className="nav-item nav-link">
               Services
-            </a>
-            <a href="project.html" className="nav-item nav-link">
-              Projects
-            </a>
-            <div className="nav-item dropdown">
-              <a
-                href="#"
-                className="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-              >
-                Pages
-              </a>
-              <div className="dropdown-menu bg-light m-0">
-                <a href="feature.html" className="dropdown-item">
-                  Features
-                </a>
-                <a href="quote.html" className="dropdown-item">
-                  Free Quote
-                </a>
-                <a href="team.html" className="dropdown-item">
-                  Our Team
-                </a>
-                <a href="testimonial.html" className="dropdown-item">
-                  Testimonial
-                </a>
-                <a href="404.html" className="dropdown-item">
-                  404 Page
-                </a>
-              </div>
-            </div>
-            <a href="contact.html" className="nav-item nav-link">
-              Contact
-            </a>
+            </Link>
           </div>
           <a
-            href=""
+            href="/services"
             className="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block"
           >
             Get A Quote
