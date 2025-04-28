@@ -1,23 +1,24 @@
-// Import Bootstrap functions
-@import "bootstrap/scss/functions";
+// Import Bootstrap and override variables at the same time
+@use "bootstrap/scss/bootstrap" with (
+  $primary: #348e38,
+  $secondary: #525368,
+  $light: #e8f5e9,
+  $dark: #0f4229,
+  $success: #28a745,
+  $info: #17a2b8,
+  $warning: #ffc107,
+  $danger: #dc3545,
+  $font-family-base: unquote("'Open Sans', sans-serif"),
+  $font-family-sans-serif: unquote("'Jost', sans-serif"),
+  $headings-font-family: unquote("'Jost', sans-serif"),
+);
 
-// Override Bootstrap variables here
-$primary: #348e38;
-$secondary: #525368;
-$light: #e8f5e9;
-$dark: #0f4229;
-
-// Optionally, customize other theme colors
-$success: #28a745;
-$info: #17a2b8;
-$warning: #ffc107;
-$danger: #dc3545;
-
-// Import Bootstrap
-@import "bootstrap/scss/bootstrap";
+// Your custom CSS root variables
 :root {
   --primary: #348e38;
   --secondary: #525368;
   --light: #e8f5e9;
   --dark: #0f4229;
+  --font-open-sans: 'Open Sans';
+  --font-jost: 'Jost';
 }

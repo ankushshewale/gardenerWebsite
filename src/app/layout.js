@@ -1,16 +1,18 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Jost, Open_Sans } from "next/font/google";
 import "./globals.scss";
 import Navbar from "@/components/Navbar";
 import BaseFooter from "@/components/BaseFooter";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const jost = Jost({
   subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--font-jost",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const openSans = Open_Sans({
   subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-open-sans",
 });
 
 export const metadata = {
@@ -21,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${jost.variable} ${openSans.variable}`}>
         <Navbar />
         {children}
         <BaseFooter />
