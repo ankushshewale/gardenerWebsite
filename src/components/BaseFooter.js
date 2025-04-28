@@ -4,6 +4,7 @@ import {
   faMapMarkerAlt,
   faPhone,
   faEnvelope,
+  faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
@@ -11,6 +12,7 @@ import {
   faYoutube,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 const BaseFooter = () => {
   return (
@@ -65,39 +67,49 @@ const BaseFooter = () => {
             </div>
             <div className="col-lg-3 col-md-6">
               <h4 className="text-white mb-4">Services</h4>
-              <a className="btn btn-link" href="">
+              <Link className="btn btn-link" href="/services">
+                <FontAwesomeIcon icon={faChevronRight} className="me-2" />
                 Landscaping
-              </a>
-              <a className="btn btn-link" href="">
+              </Link>
+              <Link className="btn btn-link" href="/services">
+                <FontAwesomeIcon icon={faChevronRight} className="me-2" />
                 Pruning plants
-              </a>
-              <a className="btn btn-link" href="">
+              </Link>
+              <Link className="btn btn-link" href="/services">
+                <FontAwesomeIcon icon={faChevronRight} className="me-2" />
                 Urban Gardening
-              </a>
-              <a className="btn btn-link" href="">
+              </Link>
+              <Link className="btn btn-link" href="/services">
+                <FontAwesomeIcon icon={faChevronRight} className="me-2" />
                 Garden Maintenance
-              </a>
-              <a className="btn btn-link" href="">
+              </Link>
+              <Link className="btn btn-link" href="/services">
+                <FontAwesomeIcon icon={faChevronRight} className="me-2" />
                 Green Technology
-              </a>
+              </Link>
             </div>
             <div className="col-lg-3 col-md-6">
               <h4 className="text-white mb-4">Quick Links</h4>
-              <a className="btn btn-link" href="">
+              <Link className="btn btn-link" href="/about">
+                <FontAwesomeIcon icon={faChevronRight} className="me-2" />
                 About Us
-              </a>
-              <a className="btn btn-link" href="">
+              </Link>
+              <Link className="btn btn-link" href="/about">
+                <FontAwesomeIcon icon={faChevronRight} className="me-2" />
                 Contact Us
-              </a>
-              <a className="btn btn-link" href="">
+              </Link>
+              <Link className="btn btn-link" href="/about">
+                <FontAwesomeIcon icon={faChevronRight} className="me-2" />
                 Our Services
-              </a>
-              <a className="btn btn-link" href="">
+              </Link>
+              <Link className="btn btn-link" href="/about">
+                <FontAwesomeIcon icon={faChevronRight} className="me-2" />
                 Terms & Condition
-              </a>
-              <a className="btn btn-link" href="">
+              </Link>
+              <Link className="btn btn-link" href="/about">
+                <FontAwesomeIcon icon={faChevronRight} className="me-2" />
                 Support
-              </a>
+              </Link>
             </div>
             <div className="col-lg-3 col-md-6">
               <h4 className="text-white mb-4">Newsletter</h4>

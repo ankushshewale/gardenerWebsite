@@ -472,14 +472,7 @@ h6,
   font-weight: normal;
   text-transform: capitalize;
   transition: 0.3s;
-}
-
-.footer .btn.btn-link::before {
-  position: relative;
-  content: "\f105";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  margin-right: 10px;
+  text-decoration: none;
 }
 
 .footer .btn.btn-link:hover {
