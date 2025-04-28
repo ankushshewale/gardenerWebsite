@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -11,6 +12,16 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import Link from "next/link";
 
 const Navbar = () => {
+  const [isCollapsed, setIsCollapsed] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsCollapsed(!isCollapsed);
+  };
+
+  const navbarCollapseClass = `collapse navbar-collapse ${
+    isCollapsed ? "show" : ""
+  }`;
+
   return (
     <React.Fragment>
       {/* <!-- Topbar Start --> */}
@@ -58,12 +69,14 @@ const Navbar = () => {
         <button
           type="button"
           className="navbar-toggler me-4"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
+          onClick={toggleNavbar}
+          aria-controls="navbarCollapse"
+          aria-expanded={isCollapsed}
+          aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarCollapse">
+        <div className={navbarCollapseClass} id="navbarCollapse">
           <div className="navbar-nav ms-auto p-4 p-lg-0">
             <Link href="/" className="nav-item nav-link active">
               Home
