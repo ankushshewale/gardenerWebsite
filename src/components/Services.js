@@ -8,7 +8,7 @@ const Services = ({ services }) => {
     <div className="container-xxl py-5">
       <div className="container">
         <div
-          className="text-center mx-auto wow fadeInUp"
+          className="text-center mx-auto animated fadeInUp"
           data-wow-delay="0.1s"
           style={{ maxWidth: "500px" }}
         >
@@ -17,7 +17,7 @@ const Services = ({ services }) => {
         </div>
         <div className="row g-4">
           {services.map((service) => (
-            <div key={service.title} className="col-lg-4 col-md-6 wow fadeInUp">
+            <div key={service.title} className="col-lg-4 col-md-6 animated fadeInUp">
               <div className="service-item rounded d-flex h-100">
                 <div className="service-img rounded">
                   <Image

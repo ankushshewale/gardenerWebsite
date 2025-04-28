@@ -94,3 +94,20 @@ export const servicesData = [
     image: "/images/service-6.jpg",
   },
 ];
+
+
+export const servicesPageHeader = {
+  title: "Our Services",
+  breadcrumbs: [
+    { label: "Home", link: "/" },
+    { label: "Services", active: true },
+  ],
+};
+
+export const aboutUsPageHeader = {
+  title: "About us",
+  breadcrumbs: [
+    { label: "Home", link: "/" },
+    { label: "About Us", active: true },
+  ],
+};
