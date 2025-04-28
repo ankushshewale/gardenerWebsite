@@ -4,6 +4,7 @@ import TopFeatureStart from "@/components/TopFeatureStart";
 import HomeAbout from "@/components/HomeAbout";
 import { faTimes, faUsers, faPhone } from "@fortawesome/free-solid-svg-icons";
 import Facts from "@/components/Facts";
+import HomeFeatures from "@/components/HomeFeatures";
 
 export default function Home() {
   const carouselData = [
@@ -64,6 +65,7 @@ export default function Home() {
       <TopFeatureStart features={topFeatureData} />
       <HomeAbout />
       <Facts facts={factsData} />
+      <HomeFeatures />
     </React.Fragment>
   );
 }
