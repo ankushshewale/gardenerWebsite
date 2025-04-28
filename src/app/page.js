@@ -1,6 +1,7 @@
+import React from "react";
 import HeaderCarousel from "@/components/HeaderCarousel";
 import TopFeatureStart from "@/components/TopFeatureStart";
-import React from "react";
+import HomeAbout from "@/components/HomeAbout";
 import { faTimes, faUsers, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
@@ -41,6 +42,7 @@ export default function Home() {
     <React.Fragment>
       <HeaderCarousel items={carouselData} />
       <TopFeatureStart features={topFeatureData} />
+      <HomeAbout />
     </React.Fragment>
   );
 }
