@@ -2,63 +2,17 @@ import React from "react";
 import HeaderCarousel from "@/components/HeaderCarousel";
 import TopFeatureStart from "@/components/TopFeatureStart";
 import HomeAbout from "@/components/HomeAbout";
-import { faTimes, faUsers, faPhone } from "@fortawesome/free-solid-svg-icons";
 import Facts from "@/components/Facts";
 import HomeFeatures from "@/components/HomeFeatures";
+import Services from "@/components/Services";
+import {
+  carouselData,
+  topFeatureData,
+  factsData,
+  servicesData,
+} from "@/data/HomePage";
 
 export default function Home() {
-  const carouselData = [
-    {
-      src: "/images/carousel-1.jpg",
-      heading: "Make Your Home Like Garden",
-      buttonText: "Explore More",
-    },
-    {
-      src: "/images/carousel-2.jpg",
-      heading: "Create Your Own Small Garden At Home",
-      buttonText: "Explore More",
-    },
-  ];
-
-  const topFeatureData = [
-    {
-      icon: faTimes,
-      heading: "No Hidden Cost",
-      subHeading:
-        "Transparent pricing with no surprise charges or hidden fees.",
-    },
-    {
-      icon: faUsers,
-      heading: "Dedicated Team",
-      subHeading:
-        "Our experienced professionals are committed to your success.",
-    },
-    {
-      icon: faPhone,
-      heading: "24/7 Available",
-      subHeading:
-        "Reach out to us anytime, our support team is always ready.",
-    },
-  ];
-
-  const factsData = [
-    {
-      count: 2334,
-      label: "Happy Clients",
-    },
-    {
-      count: 4534,
-      label: "Garden Completed",
-    },
-    {
-      count: 2987,
-      label: "Dedicated Staff",
-    },
-    {
-      count: 230,
-      label: "Awards Achieved",
-    },
-  ];
   return (
     <React.Fragment>
       <HeaderCarousel items={carouselData} />
@@ -66,6 +20,7 @@ export default function Home() {
       <HomeAbout />
       <Facts facts={factsData} />
       <HomeFeatures />
+      <Services services={servicesData} />
     </React.Fragment>
   );
 }
