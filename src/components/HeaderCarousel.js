@@ -18,56 +18,54 @@ const HeaderCarousel = ({ items }) => {
   };
 
   return (
-    <>
-      <div
-        className="container-fluid p-0 wow fadeIn"
-        style={{
-          visibility: "visible",
-          animationDelay: "0.1s",
-          animationName: "fadeIn",
-        }}
-      >
-        <div id="header-carousel" className="carousel slide">
-          <div className="carousel-inner">
-            {items.map((item, index) => (
-              <CarouselItem
-                key={index}
-                src={item.src}
-                heading={item.heading}
-                buttonText={item.buttonText}
-                isActive={index === currentIndex}
-              />
-            ))}
-          </div>
-
-          {/* Prev button */}
-          <button
-            className="carousel-control-prev"
-            type="button"
-            onClick={goToPrevious}
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-
-          {/* Next button */}
-          <button
-            className="carousel-control-next"
-            type="button"
-            onClick={goToNext}
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
+    <section
+      className="container-fluid p-0 wow fadeIn"
+      style={{
+        visibility: "visible",
+        animationDelay: "0.1s",
+        animationName: "fadeIn",
+      }}
+    >
+      <div id="header-carousel" className="carousel slide">
+        <div className="carousel-inner">
+          {items.map((item, index) => (
+            <CarouselItem
+              key={index}
+              src={item.src}
+              heading={item.heading}
+              buttonText={item.buttonText}
+              isActive={index === currentIndex}
+            />
+          ))}
         </div>
+
+        {/* Prev button */}
+        <button
+          className="carousel-control-prev"
+          type="button"
+          onClick={goToPrevious}
+        >
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+
+        {/* Next button */}
+        <button
+          className="carousel-control-next"
+          type="button"
+          onClick={goToNext}
+        >
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
+        </button>
       </div>
-    </>
+    </section>
   );
 };
 

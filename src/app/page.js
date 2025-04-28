@@ -1,5 +1,7 @@
 import HeaderCarousel from "@/components/HeaderCarousel";
+import TopFeatureStart from "@/components/TopFeatureStart";
 import React from "react";
+import { faTimes, faUsers, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   const carouselData = [
@@ -15,9 +17,30 @@ export default function Home() {
     },
   ];
 
+  const topFeatureData = [
+    {
+      icon: faTimes,
+      heading: "No Hidden Cost",
+      subHeading:
+        "Transparent pricing with no surprise charges or hidden fees.",
+    },
+    {
+      icon: faUsers,
+      heading: "Dedicated Team",
+      subHeading:
+        "Our experienced professionals are committed to your success.",
+    },
+    {
+      icon: faPhone,
+      heading: "24/7 Available",
+      subHeading:
+        "Reach out to us anytime, our support team is always ready.",
+    },
+  ];
   return (
     <React.Fragment>
       <HeaderCarousel items={carouselData} />
+      <TopFeatureStart features={topFeatureData} />
     </React.Fragment>
   );
 }

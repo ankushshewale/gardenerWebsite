@@ -8,9 +8,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+
 const Navbar = () => {
   return (
-    <>
+    <React.Fragment>
       {/* <!-- Topbar Start --> */}
       <div className="container-fluid bg-dark text-light px-0 py-2">
         <div className="row gx-0 d-none d-lg-flex">
@@ -115,7 +116,7 @@ const Navbar = () => {
         </div>
       </nav>
       {/* <!-- Navbar End --> */}
-    </>
+    </React.Fragment>
   );
 };
 

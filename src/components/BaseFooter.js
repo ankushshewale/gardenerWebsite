@@ -14,7 +14,7 @@ import {
 
 const BaseFooter = () => {
   return (
-    <>
+    <React.Fragment>
       {/* <!-- Footer Start --> */}
       <div
         className="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
@@ -143,7 +143,7 @@ const BaseFooter = () => {
         </div>
       </div>
       {/* <!-- Copyright End --> */}
-    </>
+    </React.Fragment>
   );
 };
 
