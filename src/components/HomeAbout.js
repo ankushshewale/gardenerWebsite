@@ -41,7 +41,7 @@ const HomeAbout = () => {
                       icon={faAward}
                       className="fa-3x text-primary mb-3"
                     />
-                    <h4 className="mb-3">Award Winning</h4>
+                    <h2 className="mb-3">Award Winning</h2>
                     <span>
                       Recognized for outstanding quality and creativity,
                       delivering results that consistently exceed expectations.
@@ -54,7 +54,7 @@ const HomeAbout = () => {
                       icon={faUsers}
                       className="fa-3x text-primary mb-3"
                     />
-                    <h4 className="mb-3">Dedicated Team</h4>
+                    <h2 className="mb-3">Dedicated Team</h2>
                     <span>
                       A passionate team of professionals committed to bringing
                       your vision to life with care, skill, and attention to

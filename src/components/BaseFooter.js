@@ -42,24 +42,28 @@ const BaseFooter = () => {
                 <a
                   className="btn btn-square btn-outline-light rounded-circle me-2"
                   href=""
+                  aria-label="Twitter"
                 >
                   <FontAwesomeIcon icon={faTwitter} />
                 </a>
                 <a
                   className="btn btn-square btn-outline-light rounded-circle me-2"
                   href=""
+                  aria-label="Facebook"
                 >
                   <FontAwesomeIcon icon={faFacebookF} />
                 </a>
                 <a
                   className="btn btn-square btn-outline-light rounded-circle me-2"
                   href=""
+                  aria-label="YouTube"
                 >
                   <FontAwesomeIcon icon={faYoutube} />
                 </a>
                 <a
                   className="btn btn-square btn-outline-light rounded-circle me-2"
                   href=""
+                  aria-label="LinkedIn"
                 >
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>

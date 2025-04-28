@@ -40,16 +40,16 @@ const Navbar = () => {
           <div className="col-lg-5 px-5 text-end">
             <div className="h-100 d-inline-flex align-items-center mx-n2">
               <span>Follow Us:</span>
-              <a className="btn btn-link text-light" href="">
+              <a className="btn btn-link text-light" href="" aria-label="Facebook">
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
-              <a className="btn btn-link text-light" href="">
+              <a className="btn btn-link text-light" href="" aria-label="Twitter">
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
-              <a className="btn btn-link text-light" href="">
+              <a className="btn btn-link text-light" href="" aria-label="LinkedIn">
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
-              <a className="btn btn-link text-light" href="">
+              <a className="btn btn-link text-light" href="" aria-label="Instagram">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </div>
