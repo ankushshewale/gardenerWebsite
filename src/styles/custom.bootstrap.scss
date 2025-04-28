@@ -1,0 +1,23 @@
+// Import Bootstrap functions
+@import "bootstrap/scss/functions";
+
+// Override Bootstrap variables here
+$primary: #348e38;
+$secondary: #525368;
+$light: #e8f5e9;
+$dark: #0f4229;
+
+// Optionally, customize other theme colors
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap";
+:root {
+  --primary: #348e38;
+  --secondary: #525368;
+  --light: #e8f5e9;
+  --dark: #0f4229;
+}
