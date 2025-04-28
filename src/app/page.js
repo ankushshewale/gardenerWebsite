@@ -3,6 +3,7 @@ import HeaderCarousel from "@/components/HeaderCarousel";
 import TopFeatureStart from "@/components/TopFeatureStart";
 import HomeAbout from "@/components/HomeAbout";
 import { faTimes, faUsers, faPhone } from "@fortawesome/free-solid-svg-icons";
+import Facts from "@/components/Facts";
 
 export default function Home() {
   const carouselData = [
@@ -38,11 +39,31 @@ export default function Home() {
         "Reach out to us anytime, our support team is always ready.",
     },
   ];
+
+  const factsData = [
+    {
+      count: 2334,
+      label: "Happy Clients",
+    },
+    {
+      count: 4534,
+      label: "Garden Completed",
+    },
+    {
+      count: 2987,
+      label: "Dedicated Staff",
+    },
+    {
+      count: 230,
+      label: "Awards Achieved",
+    },
+  ];
   return (
     <React.Fragment>
       <HeaderCarousel items={carouselData} />
       <TopFeatureStart features={topFeatureData} />
       <HomeAbout />
+      <Facts facts={factsData} />
     </React.Fragment>
   );
 }
